@@ -24,7 +24,7 @@ This is a Cloudflare Worker script that acts as a bridge to forward files from a
 
 Before deploying, you must configure your bot credentials and authorized users in `index.js`.
 
-Open `index.js` and edit the following variables at the top of the file:
+Open `worker.js` and edit the following variables at the top of the file:
 
 ```javascript
 const BOT_TOKEN = "YOUR_TELEGRAM_BOT_TOKEN"; // Replace with your Telegram bot token
