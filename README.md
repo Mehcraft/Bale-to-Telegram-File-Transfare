@@ -22,7 +22,7 @@ This is a Cloudflare Worker script that acts as a bridge to forward files from a
 
 ## Configuration
 
-Before deploying, you must configure your bot credentials and authorized users in `index.js`.
+Before deploying, you must configure your bot credentials and authorized users in `worker.js`.
 
 Open `worker.js` and edit the following variables at the top of the file:
 
