@@ -78,7 +78,7 @@ If you prefer not to use `.npm`, you can copy and paste the code directly in the
 4. Name your worker (e.g., `bal-to-tel`) and click **Deploy**.
 5. Once created, click on **Edit Code** in the upper right corner.
 6. Delete the default generated code.
-7. Open `index.js` on your computer, copy all the contents, and paste them into the Cloudflare editor.
+7. Open `worker.js` on your computer, copy all the contents, and paste them into the Cloudflare editor.
 8. Make sure you have updated the configuration (`BOT_TOKEN`, `BALE_BOT_TOKEN`, `USER_MAPPING`) directly in the editor.
 9. Click **Save and Deploy**.
 10. Note your worker's final URL (e.g., `https://bal-to-tel.<your-subdomain>.workers.dev`).
