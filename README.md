@@ -98,7 +98,14 @@ After deploying the worker via either method, Bale does not yet know to send mes
    ```
    *(Example: `https://bal-to-tel.myusername.workers.dev/registerWebhook`)*
 
-3. The page should return a JSON response similar to `{"ok":true,"result":true}`.
+   or
+
+   ```
+   https://YOUR_WORKER_DOMAIN.workers.dev/rw
+   ```
+   *(Example: `https://bal-to-tel.myusername.workers.dev/rw`)*
+
+4. The page should return a JSON response similar to `{"ok":true,"result":true}`.
 
 ## Usage
 1. Open your Bale bot.
