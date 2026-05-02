@@ -43,7 +43,24 @@ const USER_MAPPING = {
 
 You can deploy this worker using two methods: utilizing `npm` (Wrangler CLI) or manually via the Cloudflare Dashboard.
 
-### Method 1: Using npm (Wrangler)
+
+
+### Method 1: Manual Deployment via Cloudflare Dashboard - Recommended
+
+If you prefer not to use `.npm`, you can copy and paste the code directly in the browser:
+
+1. Log in to your [Cloudflare Dashboard](https://dash.cloudflare.com/).
+2. On the left sidebar, navigate to **Workers & Pages**.
+3. Click the **Create Worker** button.
+4. Name your worker (e.g., `bal-to-tel`) and click **Deploy**.
+5. Once created, click on **Edit Code** in the upper right corner.
+6. Delete the default generated code.
+7. Open `worker.js` on your computer, copy all the contents, and paste them into the Cloudflare editor.
+8. Make sure you have updated the configuration (`BOT_TOKEN`, `BALE_BOT_TOKEN`, `USER_MAPPING`) directly in the editor.
+9. Click **Save and Deploy**.
+10. Note your worker's final URL (e.g., `https://bal-to-tel.<your-subdomain>.workers.dev`).
+
+### Method 2: Using npm (Wrangler)
 
 This method requires [Node.js](https://nodejs.org/) installed on your machine.
 
@@ -67,21 +84,6 @@ This method requires [Node.js](https://nodejs.org/) installed on your machine.
    *(This runs `wrangler deploy` as defined in `package.json`)*.
 
 4. Once the deployment is complete, Wrangler will output your worker's live URL (e.g., `https://bal-to-tel.<your-subdomain>.workers.dev`).
-
-### Method 2: Manual Deployment via Cloudflare Dashboard - Recommended
-
-If you prefer not to use `.npm`, you can copy and paste the code directly in the browser:
-
-1. Log in to your [Cloudflare Dashboard](https://dash.cloudflare.com/).
-2. On the left sidebar, navigate to **Workers & Pages**.
-3. Click the **Create Worker** button.
-4. Name your worker (e.g., `bal-to-tel`) and click **Deploy**.
-5. Once created, click on **Edit Code** in the upper right corner.
-6. Delete the default generated code.
-7. Open `worker.js` on your computer, copy all the contents, and paste them into the Cloudflare editor.
-8. Make sure you have updated the configuration (`BOT_TOKEN`, `BALE_BOT_TOKEN`, `USER_MAPPING`) directly in the editor.
-9. Click **Save and Deploy**.
-10. Note your worker's final URL (e.g., `https://bal-to-tel.<your-subdomain>.workers.dev`).
 
 ---
 
