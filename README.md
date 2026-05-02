@@ -94,16 +94,17 @@ After deploying the worker via either method, Bale does not yet know to send mes
 1. Open a web browser.
 2. Go to the following URL format based on your worker's domain:
    ```
+   https://YOUR_WORKER_DOMAIN.workers.dev/rw
+   ```
+   *(Example: `https://bal-to-tel.myusername.workers.dev/rw`)*
+
+   or
+   
+   ```
    https://YOUR_WORKER_DOMAIN.workers.dev/registerWebhook
    ```
    *(Example: `https://bal-to-tel.myusername.workers.dev/registerWebhook`)*
 
-   or
-
-   ```
-   https://YOUR_WORKER_DOMAIN.workers.dev/rw
-   ```
-   *(Example: `https://bal-to-tel.myusername.workers.dev/rw`)*
 
 4. The page should return a JSON response similar to `{"ok":true,"result":true}`.
 
