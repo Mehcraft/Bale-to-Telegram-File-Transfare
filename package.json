@@ -1,0 +1,16 @@
+{
+  "name": "bale-to-telegram-file-transfer-bot",
+  "version": "1.0.0",
+  "main": "worker.js",
+  "scripts": {
+    "dev": "wrangler dev",
+    "deploy": "wrangler deploy",
+    "tail": "wrangler tail"
+  },
+
+  "author": "Mehrad Farhadi",
+  "license": "MIT",
+  "devDependencies": {
+    "wrangler": "^4.0.0"
+  }
+}
